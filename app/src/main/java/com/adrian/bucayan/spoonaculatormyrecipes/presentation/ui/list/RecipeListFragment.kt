@@ -106,7 +106,7 @@ class RecipeListFragment : Fragment(R.layout.fragment_recipe_list) {
 
     private fun displayLoading(isDisplayed: Boolean) {
         if (isDisplayed) {
-            binding.recipeListEmptyMsg.visibility = View.VISIBLE
+            binding.linearProgressBarLoadMore.visibility = View.VISIBLE
         } else {
             binding.linearProgressBarLoadMore.visibility = View.GONE
         }

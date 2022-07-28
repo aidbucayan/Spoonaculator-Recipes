@@ -16,7 +16,7 @@
         android:foregroundGravity="right"
         android:orientation="horizontal"
         android:scrollbars="vertical"
-        android:visibility="visible"/>
+        android:visibility="gone"/>
 
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -71,14 +71,12 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-
-
     <com.google.android.material.progressindicator.LinearProgressIndicator
         android:id="@+id/linearProgressBarLoadMore"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:indeterminate="true"
-        android:visibility="gone"
+        android:visibility="visible"
         app:hideAnimationBehavior="outward"
         app:indicatorColor="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
