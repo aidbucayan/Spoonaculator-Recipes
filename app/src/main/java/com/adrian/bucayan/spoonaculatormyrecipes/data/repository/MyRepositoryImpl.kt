@@ -5,6 +5,7 @@ import com.adrian.bucayan.spoonaculatormyrecipes.data.remote.dto.RecipeResponseD
 import com.adrian.bucayan.spoonaculatormyrecipes.domain.repository.MyRepository
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 class MyRepositoryImpl @Inject constructor(
@@ -13,11 +14,11 @@ class MyRepositoryImpl @Inject constructor(
 ) : MyRepository {
 
     override suspend fun getRecipeList(number: Int, apiKey: String): RecipeResponseDto {
-       /* val userListDto : List<UserDto>
+        val userListDto : RecipeResponseDto
         withContext(ioDispatcher) {
-            userListDto = api.getUsers()
-        }*/
-        return api.getUsers(number, apiKey)
+            userListDto = api.getUsers(number, apiKey)
+        }
+        return userListDto
     }
 
 }
