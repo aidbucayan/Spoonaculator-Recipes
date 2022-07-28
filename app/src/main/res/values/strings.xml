@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Spoonaculator My Recipes</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="network_error">Network Error</string>
+    <string name="error_msg">Please check your internet connection and try again.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="information">Information</string>
+</resources>
